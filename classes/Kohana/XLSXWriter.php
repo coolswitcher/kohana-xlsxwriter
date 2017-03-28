@@ -69,14 +69,7 @@ class XLSXWriter {
 
 	public function download ($filename)
 	{
-		$filename  = pathinfo($filename, PATHINFO_FILENAME);
-		$ext = pathinfo($filename, PATHINFO_EXTENSION);
-
-		if ( ! $ext)
-		{
-			$filename = $filename.'.xlsx';
-		}
-
+		$filename = $filename.'.xlsx';
 		$filename  = rawurlencode($filename);
 		header("Content-Description: File Transfer");
 		header("Content-Type: application/octet-stream; charset=UTF-8");
