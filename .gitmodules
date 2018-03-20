@@ -1,3 +1,0 @@
-[submodule "vendor/PHP_XLSXWriter"]
-	path = vendor/PHP_XLSXWriter
-	url = git@github.com:coolswitcher/PHP_XLSXWriter.git
